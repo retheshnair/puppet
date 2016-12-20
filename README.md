@@ -580,4 +580,7 @@ service {'NTP_service':
 ~                        
 
 
-~                                 
+Before  - For example used to ensure a package is installed before the custom file 
+require - This is the reverse relationship to before . So we could reference the package from the file with the require meta-parameter
+notify - As 'before' but also can be used to refersh a service\
+subscribe - As 'require' but is also used to referesh a service                                
